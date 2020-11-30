@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
 });
 
 // set port, listen for requests
+require("../../assets/routes/turorial.routes")(app);
 const PORT = process.env.PORT || 7071;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
