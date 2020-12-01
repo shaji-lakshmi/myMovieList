@@ -52,7 +52,7 @@ export default {
     }
   },
   async fetch () {
-    this.post = await fetch('http://localhost:8080/api/tutorials')
+    this.post = await fetch('http://localhost:8082/api/tutorials')
       .then(res => res.json())
   }
 }

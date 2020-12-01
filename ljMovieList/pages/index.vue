@@ -7,30 +7,32 @@
       </h1>
       <div id="hello">{{post}}dafilughb</div>
       <div class="links">
-        <a
-          href="formPage"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-         Enter Site
-        </a>
+      <div v-for="post in posts" :key="post">
+        <p>{{ posts.picName }}</p>
+        <!-- <b-img thumbnail :src="require('../assets/imgs/' + {{ posts.picName }})" :alt="picName"> -->
+        <!-- </b-img> -->
+      </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 export default {
+  // computed: {
+  //   movieimg () {
+  //     const fileName = this.picName.toLowerCase()
+
+  //     return require('../assets/imgs/${fileName}.png') // the module request
+  //   }
+  // },
   data () {
     return {
-      post: []
+      posts: []
     }
   },
   async fetch () {
-    this.post = await fetch('http://localhost:8082/api/tutorials')
+    this.posts = await fetch('http://localhost:8082/api/tutorials')
       .then(res => res.json())
   }
 }
