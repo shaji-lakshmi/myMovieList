@@ -8,7 +8,7 @@
       <div id="hello">{{post}}dafilughb</div>
       <div class="links">
         <a
-          href="homePg"
+          href="formPage"
           rel="noopener noreferrer"
           class="button--green"
         >
@@ -30,24 +30,8 @@ export default {
     }
   },
   async fetch () {
-    this.post = await fetch('http://localhost:8080/api/tutorials')
+    this.post = await fetch('http://localhost:8082/api/tutorials')
       .then(res => res.json())
-
-    // console.log(post)
-    // for (let i = 0; i < post.length; i++) {
-    //   console.log(post[i].title)
-    //   // document.body.getElementById('hello').appendChild(post[i].title)
-    // }
-    // if (post.id === this.$route.params.id) {
-    //   this.post = post
-    // } else {
-    //   // set status code on server and
-    //   if (process.server) {
-    //     this.$nuxt.context.res.statusCode = 404
-    //   }
-    //   // use throw new Error()
-    //   throw new Error('Post not found')
-    // }
   }
 }
 </script>

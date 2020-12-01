@@ -14,11 +14,12 @@
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
-    "bootstrap": "^4.5.2",
-    "bootstrap-vue": "^2.17.3",
+    "bootstrap": "file:node_modules/bootstrap",
+    "bootstrap-vue": "file:node_modules/bootstrap-vue",
     "core-js": "^3.6.5",
     "d3": "^6.2.0",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "vue": "file:node_modules/vue"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
