@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="basicPgLayout.css" />
+
+    <title>Game Search</title>
+    <style>
+        
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>Mist</h1>
+
+        <div id="main" class="section">
+
+            <h2> Welcome to Mist</h2>
+
+            <label for="platform">
+                Which gaming platform will you be using?
+            </label>
+            <br />
+            <br />
+            <select id="ddlPlatform">
+                <option value="NONE">Select</option>
+                <option value="PC">PC</option>
+                <option value="PS">Playstation</option>
+                <option value="XBOX">Xbox</option>
+                <option value="Switch">Nintendo Switch</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="platform">
+                In the mood for a genre?
+            </label>
+            <br />
+            <select id="ddlGenre">
+                <option value="NONE">Genre</option>
+                <option value="RPG">RPG</option>
+                <option value="MMO">MMO</option>
+                <option value="FPS">FPS</option>
+                <option value="Rhythm">Rhythm</option>
+                <option value="Action">Action</option>
+            </select>
+
+            <hr />
+
+            <div id="results"></div>
+
+            <div id="gameInfo" class="goRight">
+                
+            </div>
+
+            <div id="artGallery" class="section">
+
+                <h2>Featured Games</h2>
+
+                <div class="imgContainer">
+                    <div class="imgGalleryContainer">
+                        <img src="imgs/amongus.png" alt="amongUs" />
+                        <br> Among Us
+                        <br /> Platform: PC/Mobile
+                        <p>
+                            Description:
+                            Among Us is a American science-fiction murder mystery game developed and published by Innersloth on June
+                            15, 2018. The game follows a group of crewmates which, among them, has an impostor who goal is sabotage
+                            their space-ship and kill everyone.
+                        </p>
+
+                    </div> <!-- end of image container -->
+                    <div class="imgGalleryContainer">
+                        <img src="imgs/genshinImpact.png" alt="genshinImpact" />
+                        <br> Genshin Impact
+                        <br /> Platform: PC/Mobile/PS4
+                        <p>
+                            Description:
+                            Like Nintendo's The Legend of Zelda: Breath of the Wild – which it heavily resembles, at least on a surface
+                            level – Genshin Impact is an action-packed role-playing game with a huge world, chock-full of gorgeous
+                            vistas to explore by running, climbing and gliding.
+                        </p>
+                    </div> <!-- end of image container -->
+                    <div class="imgGalleryContainer">
+                        <img src="imgs/thewitcher.png" alt="thewitcher" />
+                        <br> The Witcher 3: Wild Hunt
+                        <br /> Platform: PC/PS4/Xbox
+                        <p>
+                            Description:
+                            The Witcher 3: Wild Hunt is an action role-playing game with a third-person perspective. Players control
+                            Geralt of Rivia, a monster slayer known as a Witcher. Geralt walks, runs, rolls and dodges, and (for the
+                            first time in the series) jumps, climbs and swims.
+                        </p>
+                    </div> <!-- end of image container -->
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="gameActions.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+﻿
+@media screen and (max-width: 600px) {
+
+    ul.navigation {
+        float: none;
+        top: 500px;
+        left: 0;
+        width: 100%;
+    }
+
+    body {
+        display: block;
+    }
+
+    .wrapper {
+        min-height: 100%;
+        margin-bottom: auto;
+    }
+
+    .imgContainer {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 4%;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: auto;
+}
+
+.footer {
+    height: 50px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+ul.navigation {
+    background-color: #000;
+    list-style: none;
+    padding: 10px 16px;
+    position: fixed;
+    margin: 0;
+    text-align: center;
+}
+
+    ul.navigation li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+        ul.navigation li + li:before {
+            color: white;
+            content: "/\00a0";
+            padding: 8px;
+        }
+
+        ul.navigation li a {
+            color: white;
+            text-decoration: none;
+        }
+
+            ul.navigation li a:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+
+
+body {
+    background-image: url("imgs/repeatClouds.png");
+    background-color: #cccccc;
+    color: #41395c;
+    font-family: Courier New, Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+#main {
+    background-color: #6d84ab;
+    color: #41395c;
+    max-width: 100%;
+    text-align: center;
+    border: 10px solid #84b2c3;
+    padding: 50px;
+    margin: 20px;
+}
+
+#landPg {
+    background-image: url("../imgs/Mist.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+    max-width: 100%;
+}
+
+.cardeffect {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.card {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.openIcon {
+    background: url(imgs/plus.png) no-repeat;
+}
+
+.closeIcon {
+    background: url(imgs//minus.png) no-repeat;
+}
+
+#artGallery {
+    display: inline-block;
+    width: 100%;
+    max-height: 150px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+.imgContainer {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+}
+
+.imgGalleryContainer {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30%;
+}
+
+img {
+    width: 100%;
+    box-shadow: white 1px 1px 5px;
+    box-sizing: border-box;
+    margin: 1%;
+    margin-bottom: 8px;
+    max-height: 170px;
+}
+
+.section {
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 420px;
+    height: 345px;
+    border-radius: 16px;
+    border: 2px solid white;
+}
+
+
+.goLeft {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.goRight {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+form {
+    color: antiquewhite;
+    text-align: center;
+}
+
+footer {
+    background-color: #801336;
+    color: antiquewhite;
+    text-align: center;
+    padding: 3px;
+}
