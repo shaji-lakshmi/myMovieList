@@ -45,30 +45,33 @@
 export default {
   data () {
     return {
-      form: {
-        listName: '',
-        listDescription: '',
-      },
+      form: 
+        { 
+          listName:'',
+          listDescription: ''
+        },
       show: true
     }
   },
   methods: {
     onSubmit(evt) {
       evt.preventDefault()
+      const data = JSON.stringify(this.form)
       this.form.listName = []
 
-      let mylists = [this.form]
-      console.log(mylists)
+      let mylists = []
+      mylists.push(this.form)
+      console.log(data)
       console.log(this.form)
+      localStorage.setItem("mylists",data);
 
-    }
-  ,
+    },
     onReset (evt) {
       evt.preventDefault()
       // Reset our form values
       this.form.listName = ''
       this.form.listDescription = ''
-    }
+    },
   }
 }
 </script>

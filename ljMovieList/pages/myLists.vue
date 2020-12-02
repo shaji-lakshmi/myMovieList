@@ -1,59 +1,49 @@
 <template>
 <html lang="en">
 <div class="container">
+  <div class="accordion" role="tablist">
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block v-b-toggle.accordion-1>List 1</b-button>
+        </b-card-header>
+        <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+          <b-card-body>
+            <b-card-text>{{ $store.state.localStorage.anyValues }}</b-card-text>
+            <b-card-text>{{ posts }}</b-card-text>
+          </b-card-body>
+        </b-collapse>
+      </b-card>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../assets/imgs/MovieManiaCam.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">ListName</h5>
-          <p class="card-text">List Description and fun stuff.</p>
-          <button type="button" class="btn btn-secondary float-right">Remove</button>
-          <button type="button" class="btn btn-secondary float-right">Edit</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../assets/imgs/MovieManiaCam.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">ListName</h5>
-          <p class="card-text">List Description and fun stuff.</p>
-          <button type="button" class="btn btn-secondary float-right">Remove</button>
-          <button type="button" class="btn btn-secondary float-right">Edit</button>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../assets/imgs/plus.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Add List</h5>
-          <p class="card-text"></p>
-          <button type="button" class="btn btn-secondary float-right">Remove</button>
-          <button type="button" class="btn btn-secondary float-right">Edit</button>
-        </div>
-    </div>
-    </div>
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block v-b-toggle.accordion-2>List 2</b-button>
+        </b-card-header>
+        <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+          <b-card-body>
+            <b-card-text>{{ posts }}</b-card-text>
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button href="addList" block v-b-toggle.accordion-3>Add List</b-button>
+        </b-card-header>
+      </b-card>
   </div>
-</div>
-
+  
 </div>
 </html>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      post: []
-    }
-  },
-  async fetch () {
-    this.post = await fetch('http://localhost:8082/api/tutorials')
-      .then(res => res.json())
+  // data () {
+  //   return {
+  //     a: []
+  //   }
+  // },
+ 
   }
-}
+
 </script>

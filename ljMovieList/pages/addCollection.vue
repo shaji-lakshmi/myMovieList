@@ -54,7 +54,7 @@
       <b-form-group id="input-group-2" label="Movie Genre:" label-for="input-2">
         <b-form-input
           id="input-2"
-          v-model="form.genre"
+          v-model="form.Genre"
           required
           placeholder="Enter Genre"
         ></b-form-input>
@@ -63,7 +63,7 @@
       <b-form-group id="input-group-2" label="Is it a TV Show or Movie:" label-for="input-2">
         <b-form-input
           id="input-2"
-          v-model="form.media"
+          v-model="form.typeOfMedia"
           required
           placeholder="Enter Media"
         ></b-form-input>
@@ -72,7 +72,7 @@
       <b-form-group id="input-group-2" label="Rating:" label-for="input-2">
         <b-form-input
           id="input-2"
-          v-model="form.rating"
+          v-model="form.Rating"
           required
           placeholder="Enter Rating"
         ></b-form-input>
@@ -97,9 +97,9 @@ export default {
         director: '',
         picName: '',
         releaseDate: '',
-        genre: '',
+        Genre: '',
         typeOfMedia: '',
-        rating: ''
+        Rating: ''
       },
       show: true
     }
@@ -133,9 +133,9 @@ export default {
       this.form.title = ''
       this.form.description = ''
       this.form.releaseDate = ''
-      this.form.genre = ''
-      this.form.media = ''
-      this.form.rating = ''
+      this.form.Genre = ''
+      this.form.typeOfMedia = ''
+      this.form.Rating = ''
     }
   }
 }

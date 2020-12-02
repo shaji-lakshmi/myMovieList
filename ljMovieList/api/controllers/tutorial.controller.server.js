@@ -19,9 +19,9 @@ exports.create = (req, res) => {
       director:req.body.director,
       picName:req.body.picName,
       releaseDate:req.body.releaseDate,
-      genre:req.body.genre, 
+      Genre:req.body.Genre, 
       typeOfMedia:req.body.typeOfMedia,
-      rating:req.body.rating, 
+      Rating:req.body.Rating, 
       published: req.body.published ? req.body.published : false
     };
   
