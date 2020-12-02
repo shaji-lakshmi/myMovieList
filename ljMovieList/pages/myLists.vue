@@ -8,7 +8,7 @@
         </b-card-header>
         <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
           <b-card-body>
-            <b-card-text>{{ $store.state.localStorage.anyValues }}</b-card-text>
+            <b-card-text>{{ a }}</b-card-text>
             <b-card-text>{{ posts }}</b-card-text>
           </b-card-body>
         </b-collapse>
@@ -38,12 +38,19 @@
 
 <script>
 export default {
-  // data () {
-  //   return {
-  //     a: []
-  //   }
-  // },
- 
-  }
+  ssr:false,
+  data () {
+    return {
+      a: []
+    }
+  },
+  methods: {
+    onLoad(evt) {
+      const a = []
 
+      a = JSON.parse(localStorage.getItem("mylists"))
+      console.log(a)
+    }
+  }
+}
 </script>

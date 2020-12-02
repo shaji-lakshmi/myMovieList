@@ -20,11 +20,6 @@
       <div>
       <h2>{{media.Rating}} <img class="img-control" src="../assets/imgs/star.png"/></h2>
       <h5>{{ media.Genre }}</h5>
-        <b-dropdown id="dropdown-1" text="Add to List" class="m-md-2">
-          <b-dropdown-item>List1</b-dropdown-item>
-          <b-dropdown-item>List2</b-dropdown-item>
-          <b-dropdown-item>List3</b-dropdown-item>
-        </b-dropdown>
       </div>
       </div>
       </div>
